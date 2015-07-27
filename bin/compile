@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# bin/compile <build-dir> <cache-dir>
+
+SLEEP_TIME=300
+
+echo "LD_LIBRARY_PATH: $LD_LIBRARY_PATH"
+
+#export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/tmp/staged/app/.apt/usr/lib/x86_64-linux-gnu/pkgconfig
+
+echo "PKG_CONFIG_PATH: $PKG_CONFIG_PATH"
+
+#echo "--- apt-get install libffi-dev ----"
+#sudo apt-get -f install
+#sudo dpkg --configure -a
+#
+#sudo apt-get install -y libffi-dev libssl-dev  #checkcheck
+#sudo apt-get install -y libmysqlclient-dev     #checkcheck
+
+echo "--- sleeping ($SLEEP_TIME) ----"
+
+sleep $SLEEP_TIME
+
+echo "--- wakeup ----"
+
